@@ -1,0 +1,37 @@
+STEVEN XU — PORTFOLIO
+
+EDIT WITHOUT CODING
+1. Double-click Start-Preview.cmd. Keep its window open.
+2. The media editor opens at http://127.0.0.1:8000/edit.html.
+3. Use Chrome or Edge for direct saving. Click Choose portfolio folder and select this steven-xu-portfolio folder.
+4. Pick a replacement file on any card, or click Add images to select several new files at once.
+5. Use Move up / Move down to reorder work. Remove deletes an item from the page; it does not delete your original media file.
+6. Upload software logo images in the Software logos area of each section. No built-in software logos remain.
+7. Click Save changes, then View portfolio and refresh the page.
+
+Saving copies the selected files into assets automatically and updates content.js and content.json. Existing media files are retained. Duplicate filenames receive a suffix, so replacing one card does not overwrite another card's file.
+The tanker section uses one composite image. Replace it using the single tanker card.
+You can also edit your name, headline, introduction, headings, image descriptions and contact email.
+For the last exploded-view section, use Display size > Image zoom (100–250%). The live preview shows how much of the image remains visible. Click Save changes and refresh the portfolio.
+
+IF DIRECT SAVING IS UNAVAILABLE
+Use Download settings and replace the website's content.js with the downloaded file.
+Manually copy the files you selected into assets, using the filenames displayed on the cards. Choosing the portfolio folder and saving directly is easier and recommended.
+Opening edit.html by double-clicking may work, but the local preview is recommended.
+
+3D MODELS AND VIDEO
+Use self-contained GLB files with embedded textures. Both supplied machines were checked in the local preview, including the Draco-compressed machine.
+Drag to rotate; scroll or pinch to zoom. The gallery automatically adds a viewer for each configured model.
+Use the local HTTP preview or a hosted website for GLBs. Direct file:// pages cannot reliably load them.
+The 3D viewer and Draco decoder need an internet connection. The viewer is Google's open-source model-viewer 4.3.1, loaded from Google's CDN: https://modelviewer.dev/
+The preview server supports video streaming and seeking, including your large MP4.
+
+PUBLISH YOURSELF
+Upload index.html, styles.css, portfolio.js, content.js, favicon.svg and the assets folder to your static website host. Keep index.html at the top level.
+No build tools, database or Squarespace subscription are needed.
+Keep edit.html, editor.js, editor.css, content.json, preview.py, Start-Preview.cmd and this guide on your computer. They do not need to be published.
+After changing your media, upload the updated content.js and the newly added files to your host.
+
+LOCAL PREVIEW REQUIREMENTS
+Start-Preview.cmd uses Python already available on this computer, or a standard Python installation on another PC. It requires no extra packages.
+If port 8000 is already in use, close the previous preview window or use the preview that is already open.
